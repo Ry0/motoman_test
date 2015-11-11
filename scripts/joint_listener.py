@@ -9,6 +9,6 @@ def callback(message):
     rospy.loginfo("%s", name)
   print("")
 
-rospy.init_node("listener")
+rospy.init_node("joint_listener_py")
 sub = rospy.Subscriber("/joint_states", JointState, callback)
 rospy.spin()
